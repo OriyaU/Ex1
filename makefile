@@ -47,4 +47,4 @@ main.o: main.c NumClass.h
 .PHONY: clean all
 
 clean:
-	rm -f *.o *.a *.so mains maindloop maindrec.
+	rm -f *.o *.a *.so mains maindloop maindrec

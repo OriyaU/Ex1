@@ -19,7 +19,7 @@ int isArmstrong(int n){
         ans = ans+power(digit, numOfDigits);
         number = number/10;
     }
-    if (ans == number){return 1;}
+    if (ans == n){return 1;}
     else{return 0;}
 }
 

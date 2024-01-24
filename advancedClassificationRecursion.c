@@ -5,7 +5,7 @@
 int power(int digit,int numDigit){
     if(numDigit==0)
     {
-        return 0;
+        return 1;
     }
     
     digit*power(digit, numDigit-1);
@@ -53,7 +53,7 @@ int palindromeRec(int num, int rev){
 
 
 int isArmstrong(int n){
-    if(armstrongRec(n ,countDigits(n)) == n){
+    if(armstrongRec(n ,countDigits(n))){
         return 1;
     }
     else{return 0;}
