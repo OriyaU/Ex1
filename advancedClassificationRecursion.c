@@ -2,15 +2,13 @@
 #include "NumClass.h"
 
 
-int power(int digit,int numDigit){
-    if(numDigit==0)
-    {
-        return 1;
+int power(int base, int exponent){
+    int ans = 1;
+    for(int i = 0; i< exponent; i++){
+        ans = ans*base;
     }
-    
-    digit*power(digit, numDigit-1);
+    return ans;
 }
-
 int armstrongRec(int num, int numOfDigits){
     if(num == 0){
         return 0;
@@ -53,10 +51,13 @@ int palindromeRec(int num, int rev){
 
 
 int isArmstrong(int n){
-    if(armstrongRec(n ,countDigits(n))){
+    
+    if(armstrongRec(n ,countDigits(n))==n){
         return 1;
     }
-    else{return 0;}
+    
+    
+    return 0;
 }
 
 int isPalindrome(int n){

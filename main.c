@@ -60,8 +60,8 @@ void main(){
 
     int distance = 0;
     if(num1 <= 0 || num2 <= 0){printf("At least one of the numbers is 0 or less than 0");}
-    int low = 0;
-    int high = 0;
+    int low = num1;
+    int high = num2;
     if(num1 < num2){ 
         distance = num2 - num1;
         low = num1;
@@ -72,8 +72,9 @@ void main(){
         low = num2;
         high = num1;
         }
+    
     printf("The Armstrong numbers are:");
-    for(int i = 0; i<distance; i++){
+    for(int i = 0; i<=distance; i++){
         if(isArmstrong(i+low)){
             printf(" %d", i+low);
         }
