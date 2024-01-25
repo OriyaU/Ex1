@@ -1,61 +1,13 @@
 #include <stdio.h>
 #include "NumClass.h"
 
-// int first;
-// int last;
 
-// int main()
-// {
-//     int first,last;
-//     printf("please inter first number:");
-//     scanf("%d", &first );
-
-//     printf("please inter last number:");
-//     scanf("%d" , &last );
-
-//     for(int i=first+1;i<=last;i++)
-//     {
-//             if (isPrime(i)==1)
-//             {
-//                 printf(i);
-//             }
-//     }
-//     printf("\n");
-//     for(int i=first+1;i<=last;i++)
-//     {
-//             if (isArmstrong(i)==1)
-//             {
-//                 printf(i);
-//             }
-//     }
-//     printf("\n");
-
-//     for(int i=first+1;i<=last;i++)
-//     {
-//             if (isStrong(i)==1)
-//             {
-//                 printf(i);
-//             }
-//     }
-//     printf("\n");
-
-//     for(int i=first+1;i<=last;i++)
-//     {
-//             if (isPalindrome(i)==1)
-//             {
-//                 printf(i);
-//             }
-//     }
-//     printf("\n");
-
-//     return 0;
-// }
 void main(){
     int num1 = 0;
     int num2 = 0;
-    printf("Enter the first number: ");
+    
     scanf("%d", &num1);
-    printf("Enter the second number: ");
+    
     scanf("%d", &num2);
 
     int distance = 0;
